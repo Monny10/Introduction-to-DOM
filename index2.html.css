@@ -1,0 +1,9 @@
+input {
+  padding: 0.9rem 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid indigo;
+  text-align: center;
+}

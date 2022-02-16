@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Loop -->
+    <script>
+        // While Loop
+        let w = 0;
+        while (w < 3) { // shows 0, then 1, then 2
+        alert( w );
+        w++;
+        }
+
+        // Do While
+        let z = 0;
+        do {
+        alert( z );
+        z++;
+        } while (z < 3);
+
+        // For
+        for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+        alert(i);
+        }
+        // If DOM
+        let operation = prompt("Who's there ?", "");
+         if (operation === "Admin") {
+             let password = prompt("Password", "");
+             if (password === "TheMaster"){
+                 console.log("Welcome")
+             }else if(password === "Cancel" || password === !password){
+                 console.log("Canceled")
+             }else{
+                 console.log ("Wrong Password");
+             }
+   }else if( operation === "Cancel" || operation === !operation){
+             console.log("Canceled");
+         }else{
+             console.log("I dont Know");
+         }
+
+        //  For Even
+         for (let i = 0; i < 10; i++){
+             if (i % 2 == 0){
+                 console.log("Number", i)
+             }
+         }
+
+        //  For Odd
+         for (let a = 0; a < 10; a++){
+             if (a % 2 == !0){
+                 console.log("Number", a)
+             }
+         }
+
+        //  For - Prime number
+        let n = 10;
+
+        nextPrime:
+        for (let i = 2; i <= n; i++) { // for each i...
+
+        for (let j = 2; j < i; j++) { // look for a divisor..
+            if (i % j == 0) continue nextPrime; // not a prime, go next i
+        }
+
+        alert( i ); // a prime
+        }
+
+        // Switch Case
+        let a = 2 + 2;
+
+        switch (a) {
+        case 3:
+            alert( 'Too small' );
+            break;
+        case 4:
+            alert( 'Exactly!' );
+            break;
+        case 5:
+            alert( 'Too big' );
+            break;
+        default:
+            alert( "I don't know such values" );
+        }
+        
+         </script>
+
+
+
+
+
+</body>
+</html>
