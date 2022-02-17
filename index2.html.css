@@ -3,7 +3,27 @@ input {
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  border: 1px solid indigo;
+  border-radius: 10px;
+  border: 1px solid teal;
   text-align: center;
+}
+input[type="checkbox"] {
+  display: inline;
+}
+input[type="radio"] {
+  display: inline;
+}
+button {
+  outline: none;
+  border-style: none;
+  padding: 1rem 1.8rem;
+  border: 1px solid teal;
+  border-radius: 10px;
+  color: teal;
+  margin: 1.3rem 5rem;
+  background-color: transparent;
+}
+button:hover {
+  background-color: teal;
+  color: #fff;
 }
